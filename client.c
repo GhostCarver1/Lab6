@@ -84,7 +84,7 @@ int main(int argc, char *argv[]) {
     }
 
     server_addr.sin_family = AF_INET;
-    server_addr.sin_port = htons(PORT);
+    server_addr.sin_port = htons(port);
     inet_pton(AF_INET, ip_address, &server_addr.sin_addr);
     if (connect(socket_fd, (struct sockaddr *)&server_addr, sizeof(server_addr)) < 0) {
         perror("Connection failed");
