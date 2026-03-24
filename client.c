@@ -64,6 +64,7 @@ void send_transfer_complete_packet(int socket_fd) {
 }
 
 int main(int argc, char *argv[]) {
+    ip_address = argc > 2 ? argv[2] : ip_address;
     int port = argc > 1 ? atoi(argv[1]) : PORT;
     // get the ip address of the computer running the client program and store it in the variable ip_address. If the user provides an ip address as a command line argument, use that instead of the default localhost ip address
     ip_address = argc > 2 ? argv[2] : ip_address;
