@@ -10,7 +10,7 @@
 
 #define PORT 8080
 #define PACKET_SIZE 10
-const char *ip_address = "127.0.0.1";
+const char *ip_address = "10.30.8.146";
 
 
 
